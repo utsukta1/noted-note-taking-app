@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Noted!</title>
+    <link rel="shortcut icon" href="assets/note-task-comment-message-postit-post-it_108544.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-bar">
+                <div class="logo"><a href="#"><img src="assets/note-task-comment-message-postit-post-it_108544.png"
+                            width="50px" alt="logo"></a>
+                </div>
+
+                <div class="buttons"><button class="opbuttons" onclick="showAllNotes()">All</button>
+                    <button class="opbuttons" onclick="showPersonal()">Personal</button>
+                </div>
+            </div>
+
+
+            <div class="add"><button id="b"><a href="#bring_new_here">New note</a></button></div>
+
+
+
+        </nav>
+    </header>
+
+
+
+
+
+    <div id="show_notes">
+
+        <div class="display-title">
+            <h3>Your notes:</h3>
+        </div>
+
+
+
+        <div class="cards">
+            <div id="notes-card">
+                <!-- <div class="info">
+
+                    <div class="btn"><button>Delete</button></div>
+                    <div class="btn"><button>update</button></div>
+
+
+
+                </div> -->
+
+
+
+            </div>
+
+        </div>
+
+    </div>
+    <a id="bring_new_here"></a>
+    <div class="input-div">
+        <div class="input-title">
+            <h2>Add a note!</h2>
+        </div>
+        <div class="cat">
+            <select name="categories" id="category">
+                <option value="personal">Personal</option>
+                <option value="internship">Internship</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <textarea name="note" id="notes" cols="50" rows="10"></textarea>
+
+    </div>
+    <div class="button">
+        <button id="btn" onclick="printMessage()" type="submit">Add</button>
+    </div>
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
